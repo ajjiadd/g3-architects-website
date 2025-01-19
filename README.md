@@ -6,6 +6,10 @@
 
 This is a simple website for G3 Architects, a fictional architecture firm. The website is designed to showcase the company's services, features, and achievements. It is built using HTML, CSS, and a responsive design to ensure a smooth user experience across various devices.
 
+**Website View**
+
+![Website View](https://github.com/ajjiadd/g3-architects-website/raw/main/assets/image.png?raw=true)
+
 **Features**
 ------------
 
