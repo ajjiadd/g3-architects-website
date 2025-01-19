@@ -42,7 +42,9 @@ a{
 
 .navBar, 
 .banner, 
-.mainSection{
+.mainSection,
+.footerContent
+{
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -155,14 +157,71 @@ color: var(--dark-3);
 /* Feature Experience design  */
 .FeatureExperience{
     display: flex;
+    gap: 90px;
+}
+
+.featureTitle{
+    font-size: 45px;
+font-weight: 700;
+line-height: 53px;
+color: var(--dark-1);
+border-left: 5px solid var(--design-clr);
+padding-left: 20px;
+}
+
+.featureDescription{
+    font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+color: var(--dark-3);
+margin-top: 24px;
+}
+
+.featureCardContainer{
+    margin-top: 30px;
+}
+
+.experinceImgContainer img{
+    width: 100%;
+}
+
+.featureCard{
+    margin-top: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+}
+
+.featureCard h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    color: var(--dark-1);
+    margin-bottom: 10px;
+}
+
+.featureCard p{
+    font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+color: var(--dark-3);
+}
+
+#experiece-badge{
+    padding: 30px;
+    margin-left: -70px;
+    margin-top: -100px;
+}
+#exp-year{
+    font-size: 45px;
+    font-weight: 700;
 }
 
 
 /* Some fact Section  */
-.someFactSection{
 
+.SomeFactSection{
+    margin-top: 130px;
 }
-
 .someFactContent{
     margin-bottom: 50px;
 }
@@ -252,6 +311,20 @@ margin-bottom: 50px;
     filter: grayscale(100);
 }
 
+/* Footer section design  */
+
+.footerSection{
+    margin: 130px 0;
+}
+.footerContent{
+    text-align: center;
+    background-color: var(--design-clr2);
+    padding: 40px 0;
+    color: var(--dark-2);
+    border-radius: 10px;
+}
+
+
 
 
 
@@ -307,6 +380,20 @@ margin-bottom: 50px;
         gap: 50px;
     }
 
+    .experienceContent{
+        padding: 20px;
+    }
+
+    .FeatureExperience{
+        flex-direction: column;
+    }
+
+    #experiece-badge{
+        padding: 30px;
+        margin-left: 150px;
+        margin-top: -100px;
+    }
+
 
 }
 
@@ -354,6 +441,21 @@ margin-bottom: 50px;
     }
 
 
+    .experienceContent{
+        padding: 20px;
+    }
+
+    .FeatureExperience{
+        flex-direction: column;
+    }
+
+    #experiece-badge{
+        padding: 30px;
+        margin-left: 170px;
+        margin-top: -100px;
+    }
+
+
 }
 
 @media screen and (min-width: 778px) and (max-width: 976px){
@@ -397,6 +499,20 @@ margin-bottom: 50px;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 50px;
+    }
+
+    .experienceContent{
+        padding: 20px;
+    }
+
+    .FeatureExperience{
+        flex-direction: column;
+    }
+
+    #experiece-badge{
+        padding: 30px;
+        margin-left: 290px;
+        margin-top: -100px;
     }
 
 }
