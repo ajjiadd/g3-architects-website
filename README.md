@@ -10,6 +10,8 @@ This is a simple website for G3 Architects, a fictional architecture firm. The w
 
 ![Website View](https://github.com/ajjiadd/g3-architects-website/raw/main/assets/image.png?raw=true)
 
+**Live View:** https://ajjiadd.github.io/g3-architects-website/
+
 **Features**
 ------------
 
