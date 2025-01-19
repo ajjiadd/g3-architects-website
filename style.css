@@ -6,4 +6,14 @@
     font-family: "Work Sans", serif;
 }
 
+:root{
+    --header-bg: rgba(255, 144, 14, 0.1);
+    --design-clr: rgb(255, 144, 14);
+    --design-clr2:rgb(255, 244, 231);
+    --dark-1: rgb(19, 19, 19);
+    --dark-2:rgb(66, 66, 66);
+    --dark-3:rgb(114, 114, 114);
+    
+}
+
 
