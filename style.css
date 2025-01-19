@@ -13,6 +13,7 @@
     --dark-1: rgb(19, 19, 19);
     --dark-2:rgb(66, 66, 66);
     --dark-3:rgb(114, 114, 114);
+    --white:rgb(255, 255, 255);
     
 }
 
@@ -25,6 +26,28 @@ a{
     margin: 0 200px;
 }
 
+.btn{
+    border-radius: 8px;
+    background: var(--design-clr);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    padding: 20px 25px;
+    border: none;
+    color: var(--white);
+}
+.btn-container{
+    margin-top: 32px;
+}
+
+.navBar, .banner, .mainSection{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Header section design  */
 .headerSection{
     background-color: var(--header-bg);
     padding: 50px 0;
@@ -54,6 +77,83 @@ line-height: 26px;
 color: var(--dark-2);
 }
 
+.banner{
+    text-align: center;
+    margin-top: 110px;
+}
+
+.headerContent{
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+.headContentTitle{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    color: var(--dark-1);
+}
+.headContentDescrpt{
+    margin-top: 25px;
+    font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+color: var(--dark-3);
+}
+
+.bannerimgContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.bannerimgContainer img{
+    /* max-width: 1100px; */
+    width: 100%;
+}
+
+/* Main Section design  */
+
+
+.quickListFeture{
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.quickImgContainer{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.quickTitle{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    margin-bottom: 24px;
+}
+
+.quickTitle span:nth-child(1){
+    color: var(--dark-3);
+}
+
+.quickTitle span:nth-child(2){
+    color: var(--design-clr);
+}
+
+.quickDescript{
+    color: var(--dark-3);
+}
+
+
+/* Feature Experience design  */
+.FeatureExperience{
+    display: flex;
+}
 
 
 
@@ -65,10 +165,7 @@ color: var(--dark-2);
 
 
 @media screen and (max-width: 576px) {
-    .body-side-margin{
-        margin: 0 25px;
-    }
-
+    
     .navBar{
         flex-direction: column;
     }
@@ -80,14 +177,26 @@ color: var(--dark-2);
     .menuContainer{
         margin-top: 20px;
         gap: 14px;
-        /* flex-direction: column;
-        gap: 10px; */
+    }
+
+
+    .quickListFeture{
+        flex-direction: column-reverse;
+        
+    }
+
+    .quickImgContainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .quickListFeture{
+        padding: 20px;
     }
 
 
 }
 
-@media screen and (min-width: 576px) and (max-width: 992px){
+@media screen and (min-width: 576px) and (max-width: 776px){
     .body-side-margin{
         margin: 0 80px;
     }
@@ -97,7 +206,49 @@ color: var(--dark-2);
     }
     .menuContainer{
         margin-top: 20px;
-        /* flex-direction: column;
-        gap: 10px; */
     }
+
+    .quickListFeture{
+        flex-direction: column-reverse;
+        
+    }
+
+    .quickImgContainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .quickListFeture{
+        padding: 20px;
+    }
+
+
+}
+
+@media screen and (min-width: 778px) and (max-width: 976px){
+    .navBar{
+        flex-direction: column;
+    }
+
+    .menuContainer{
+        margin-top: 20px;
+        
+    }
+
+    .quickListFeture{
+        flex-direction: column-reverse;
+        
+    }
+
+    .quickImgContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .quickListFeture{
+        padding: 20px;
+    }
+
+}
+
+@media screen and (min-width: 977px) and (max-width: 1155px){
+    
 }
